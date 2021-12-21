@@ -1,0 +1,86 @@
+{
+    "users": [
+        {
+            "role": "admin",
+            "email": "admin1@gmail.com",
+            "password": "test1234",
+            "username": "admin1",
+            "favorites": []
+        },
+        {
+            "role": "admin",
+            "email": "admin2@gmail.com",
+            "password": "test1234",
+            "username": "admin2",
+            "favorites": []
+        },
+        {
+            "role": "user",
+            "email": "user1@gmail.com",
+            "password": "test1234",
+            "username": "user1",
+            "favorites": []
+        },
+        {
+            "role": "user",
+            "email": "user2@gmail.com",
+            "password": "test1234",
+            "username": "user2",
+            "favorites": []
+        },
+        {
+            "role": "user",
+            "email": "user3@gmail.com",
+            "password": "test1234",
+            "username": "user3",
+            "favorites": []
+        },
+        {
+            "role": "user",
+            "email": "user4@gmail.com",
+            "password": "test1234",
+            "username": "user4",
+            "favorites": []
+        }
+    ],
+    "cryptos": [
+        {
+            "id": "BTC",
+            "full_name": "Bitcoin",
+            "image_url": "/btc"
+        },
+        {
+            "id": "ETH",
+            "full_name": "Ethereum",
+            "image_url": "/eth"
+        },
+        {
+            "id": "BNB",
+            "full_name": "Binance coin",
+            "image_url": "/bnb"
+        },
+        {
+            "id": "USDC",
+            "full_name": "Usd coin",
+            "image_url": "/usd"
+        }
+    ],
+    "rss": [
+        {
+            "key": "cryptocompare",
+            "image_url": "https://images.cryptocompare.com/news/default/cryptocompare.png"
+        },
+        {
+            "key": "cryptoglobe",
+            "image_url": "https://images.cryptocompare.com/news/default/cryptoglobe.png"
+        },
+        {
+            "key": "theblock",
+            "image_url": "https://images.cryptocompare.com/news/default/theblock.png"
+        },
+        {
+            "key": "cryptonewsreview",
+            "image_url": "https://images.cryptocompare.com/news/default/cryptonewsreview.png"
+        }
+    ]
+}

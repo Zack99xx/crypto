@@ -1,0 +1,65 @@
+tags:
+ name: Rss
+ description: Rss feed
+
+paths:
+ /rss:
+   get:
+     summary: Returns all the feeds available on the platform.
+     tags: [Rss]
+     requestBody:
+       required: false
+     responses:
+       "200":
+         description: Returns feeds
+       "400":
+         description: An error occured.
+   post:
+     summary: Adds a new feed to the platform (needs to ADMIN).
+     tags: [Rss]
+     requestBody:
+       required: true
+     responses:
+       "200":
+         description: Adds feed
+       "400":
+         description: An error occured.
+     parameters:
+       - in: query
+         name: key
+         description: Feed key.
+         required: true
+         type: string
+       - in: query
+         name: image_url
+         description: Feed image url.
+         required: true
+         type: string
+ /rss/all:
+   get:
+     summary: Returns all the feeds that exists.
+     tags: [Rss]
+     requestBody:
+       required: false
+     responses:
+       "200":
+         description: Returns feeds
+       "400":
+         description: An error occured.
+ /rss/:key:
+   get:
+     summary: Deletes feed from the platform (needs to ADMIN).
+     tags: [Rss]
+     requestBody:
+       required: true
+     responses:
+       "200":
+         description: Deletes feeds
+       "400":
+         description: An error occured.
+     parameters:
+       - in: params
+         name: key
+         description: Feed key.
+         required: true
+         type: string

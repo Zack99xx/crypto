@@ -1,0 +1,33 @@
+tags:
+ name: Press
+ description: Press review articles
+
+paths:
+ /articles:
+   get:
+     summary: Returns the 20 last published articles with few informations.
+     tags: [Press]
+     requestBody:
+       required: false
+     responses:
+       "200":
+         description: Returns articles
+       "400":
+         description: An error occured.
+ /articles/:id:
+   get:
+     summary: Returns an article with complete informations.
+     tags: [Press]
+     requestBody:
+       required: true
+     responses:
+       "200":
+         description: Returns article
+       "400":
+         description: An error occured.
+     parameters:
+       - in: params
+         name: id
+         description: Article id.
+         required: true
+         type: string
