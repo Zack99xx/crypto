@@ -28,7 +28,7 @@ jobs:
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
       - name: change permission
-        run: sudo chmod 400 devops-task/application-key.pem
+        run: sudo chmod 400 ./actions/ansible/crypto.pem
 
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
