@@ -34,9 +34,9 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           # Required, playbook filepath
-          playbook: playbook.yml
+          playbook: install-docker.yml
           # Optional, directory where playbooks live
-          directory: ./actions/ansible/install-docker.yml
+          directory: ./actions/ansible
           # Optional, SSH private key
           #key: ${{secrets.SSH_PRIVATE_KEY}}
           # Optional, literal inventory file contents
