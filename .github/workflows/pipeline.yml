@@ -36,12 +36,12 @@ jobs:
           # Required, playbook filepath
           playbook: playbook.yml
           # Optional, directory where playbooks live
-          directory: ./devops-task
+          directory: ./actions/ansible/install-docker.yml
           # Optional, SSH private key
-          key: ${{secrets.SSH_PRIVATE_KEY}}
+          #key: ${{secrets.SSH_PRIVATE_KEY}}
           # Optional, literal inventory file contents
           inventory: |
             [all:vars]
-            ansible_ssh_private_key_file=./application-key.pem
+            ansible_ssh_private_key_file=./actions/ansible/crypto.pem
             [all]
-            13.233.236.101
+            23.102.62.28
