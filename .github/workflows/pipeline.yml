@@ -43,6 +43,6 @@ jobs:
           # Optional, literal inventory file contents
           inventory: |
             [all:vars]
-            ansible_ssh_private_key_file=actions/ansible/crypto.pem
+            ansible_ssh_private_key_file=/home/runner/work/crypto/crypto/actions/ansible/crypto.pem
             [all]
             23.102.62.28
