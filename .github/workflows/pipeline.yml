@@ -26,21 +26,21 @@ jobs:
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
       - name: change permission
-        run: sudo chmod 400 ./actions/ansible/crypto.pem
+        run: sudo chmod 400 actions/ansible/crypto.pem
       - name: list and pwd
-        run: ls ./actions/ansible/
+        run: ls actions/ansible/
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
         with:
           # Required, playbook filepath
           playbook: install-docker.yml
           # Optional, directory where playbooks live
-          directory: ./actions/ansible
+          directory: actions/ansible
           # Optional, SSH private key
           #key: ${{secrets.SSH_PRIVATE_KEY}}
           # Optional, literal inventory file contents
           inventory: |
             [all:vars]
-            ansible_ssh_private_key_file=./actions/ansible/crypto.pem
+            ansible_ssh_private_key_file=actions/ansible/crypto.pem
             [all]
             23.102.62.28
