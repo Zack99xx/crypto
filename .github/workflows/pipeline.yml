@@ -28,9 +28,7 @@ jobs:
       - name: change permission
         run: sudo chmod 400 ./actions/ansible/crypto.pem
       - name: list and pwd
-        run: |
-          pwd
-          ls ./actions/ansible/
+        run: ls ./actions/ansible/
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
         with:
