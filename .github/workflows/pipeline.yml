@@ -27,7 +27,10 @@ jobs:
           sudo apt install ansible
       - name: change permission
         run: sudo chmod 400 ./actions/ansible/crypto.pem
-
+      - name: list and pwd
+        run: |
+          pwd
+          ls
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
         with:
