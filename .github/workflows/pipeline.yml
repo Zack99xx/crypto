@@ -31,21 +31,21 @@ jobs:
         run: |
           ls actions/ansible/
           pwd
-      - name: Run playbook install docker
-        uses: dawidd6/action-ansible-playbook@v2
-        with:
-          # Required, playbook filepath
-          playbook: install-docker.yml
-          # Optional, directory where playbooks live
-          directory: actions/ansible
-          # Optional, SSH private key
-          #key: ${{secrets.SSH_PRIVATE_KEY}}
-          # Optional, literal inventory file contents
-          inventory: |
-            [all:vars]
-            ansible_ssh_private_key_file=/home/runner/work/crypto/crypto/actions/ansible/crypto.pem
-            [all]
-            23.102.62.28
+#       - name: Run playbook install docker
+#         uses: dawidd6/action-ansible-playbook@v2
+#         with:
+#           # Required, playbook filepath
+#           playbook: install-docker.yml
+#           # Optional, directory where playbooks live
+#           directory: actions/ansible
+#           # Optional, SSH private key
+#           #key: ${{secrets.SSH_PRIVATE_KEY}}
+#           # Optional, literal inventory file contents
+#           inventory: |
+#             [all:vars]
+#             ansible_ssh_private_key_file=/home/runner/work/crypto/crypto/actions/ansible/crypto.pem
+#             [all]
+#             23.102.62.28
       - name: Run playbook for docker compose 
         uses: dawidd6/action-ansible-playbook@v2
         with:
