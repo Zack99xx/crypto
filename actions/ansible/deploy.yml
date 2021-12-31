@@ -7,14 +7,13 @@
       ansible.builtin.git:
         repo: 'https://github.com/ronaksuchak/crypto.git'
         dest: ~/src/
-        clone: no
-        update: yes
-    - name: This command will change the working directory to somedir/
-      ansible.builtin.shell:
-        cmd: ls -l 
+        
+    # - name: This command will change the working directory to somedir/
+    #   ansible.builtin.shell:
+    #     cmd: ls -l 
     - name: Create and start services
       docker_compose:
-        project_src: ~/src/crypto/
+        project_src: /home/azureuser/src/crypto/
       register: output
        
     - debug:
