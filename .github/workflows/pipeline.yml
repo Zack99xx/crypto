@@ -27,7 +27,7 @@ jobs:
           pip install python-apt
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
-          pip install docker-py docker docker-compose
+          pip install docker docker-compose
       - name: change permission
         run: sudo chmod 400 actions/ansible/crypto.pem
       - name: list and pwd
