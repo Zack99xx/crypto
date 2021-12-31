@@ -23,7 +23,7 @@ jobs:
           sudo apt update
           sudo apt install software-properties-common
           pip install python-apt
-          pip install docker docker-compose
+          pip install docker-py docker-compose
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
       - name: change permission
