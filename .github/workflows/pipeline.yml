@@ -28,7 +28,7 @@ jobs:
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
           sudo apt-get install python3-docker
-          pip install docker docker-compose
+         # pip install docker docker-compose
       - name: get docker version
         run: |
           pip list docker | grep docker 
