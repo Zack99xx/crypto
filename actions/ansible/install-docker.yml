@@ -53,4 +53,5 @@
     become_user: azureuser
     pip:
       name:
+        - docker
         - docker-compose
