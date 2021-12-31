@@ -3,9 +3,15 @@
   hosts: all
   gather_facts: no
   tasks:
+    - name: get source
+      ansible.builtin.git:
+        repo: 'https://github.com/ronaksuchak/crypto.git'
+        dest: ~/src/
+        clone: no
+        update: yes
     - name: Create and start services
       docker_compose:
-        project_src: .
+        project_src: ~/src/crypto/
       register: output
        
     - debug:
