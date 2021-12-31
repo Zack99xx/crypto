@@ -11,7 +11,7 @@
         update: yes
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
-        cmd: ls -l ~/src/crypto/
+        cmd: ls -l 
     - name: Create and start services
       docker_compose:
         project_src: ~/src/crypto/
