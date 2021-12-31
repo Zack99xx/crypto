@@ -28,6 +28,9 @@ jobs:
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
           pip install docker docker-compose
+      - name: get docker version
+        run: |
+          pip list docker | grep docker 
       - name: change permission
         run: sudo chmod 400 actions/ansible/crypto.pem
       - name: list and pwd
