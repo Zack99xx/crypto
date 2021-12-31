@@ -22,6 +22,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install software-properties-common
+          python --version
+          python3 --version
           pip install python-apt
           sudo add-apt-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible
