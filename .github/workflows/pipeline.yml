@@ -50,7 +50,7 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           # Required, playbook filepath
-          playbook: docker-compose.yml
+          playbook: deploy.yml
           # Optional, directory where playbooks live
           directory: actions/ansible
           # Optional, SSH private key
