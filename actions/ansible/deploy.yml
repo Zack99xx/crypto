@@ -13,7 +13,7 @@
     #     cmd: ls -l 
     - name: Create and start services
       docker_compose:
-        project_src: /home/azureuser/src/crypto/
+        project_src: /home/azureuser/src
       register: output
        
     - debug:
