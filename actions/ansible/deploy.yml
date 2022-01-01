@@ -8,7 +8,7 @@
         repo: 'https://github.com/ronaksuchak/crypto.git'
         dest: ~/src/
         
-    # - name: This command will change the working directory to somedir/
+    # - name: This command will change the working directory to  somedir/
     #   ansible.builtin.shell:
     #     cmd: ls -l 
     - name: Create and start services
