@@ -37,7 +37,7 @@
       update_cache: yes
 
   - name: add userpermissions
-    shell: "usermod -aG docker azureuser"
+    shell: "usermod -aG docker admusr"
 
   # Installs Docker SDK
   # --
@@ -50,7 +50,7 @@
       name: python3-pip
   
   - name: install python sdk
-    become_user: azureuser
+    become_user: admusr
     pip:
       name:
         - docker
