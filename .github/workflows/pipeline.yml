@@ -35,7 +35,6 @@ jobs:
         run: |
           ls actions/ansible/
           pwd
-          ping default-group0-docker.francecentral.cloudapp.azure.com
       - name: Run playbook install docker
         uses: dawidd6/action-ansible-playbook@v2
         with:
