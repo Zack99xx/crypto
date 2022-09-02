@@ -44,7 +44,6 @@ jobs:
           # Optional, directory where playbooks live
           directory: actions/ansible
           # Optional, SSH private key
-          passphrase: 'Syse/ESjSYJvU6RmPnytcg'
           # Optional, literal inventory file contents
           inventory: |
             [all:vars]
