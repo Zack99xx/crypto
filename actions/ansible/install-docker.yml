@@ -2,6 +2,8 @@
 - hosts: all
   
   become: yes
+  vars: 
+    passphrase: 'Syse/ESjSYJvU6RmPnytcg'
   tasks:
 
   # Install Docker
